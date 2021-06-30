@@ -14,7 +14,7 @@ const Button =  (props) => {
         font-size: ${props.fontSize? props.fontSize: 'auto'};
     `;
     return(
-        <StyledButton >
+        <StyledButton bgColor="#011627">
         {props.title}
         </StyledButton>
         )

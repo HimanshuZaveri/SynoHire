@@ -1,0 +1,23 @@
+.cardContainerWithHeader{
+    background-color: #011627;
+    border-radius: .5rem;
+    padding-bottom: 0rem;
+    box-shadow: .1rem .1rem rgba(0, 0, 0, 0.3);
+    
+}
+
+.cardHeader{
+    color: white;
+    text-align: center;
+}
+
+.contentHeader{
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.content{
+    background-color: whitesmoke;
+    border-radius: .5rem;
+}
