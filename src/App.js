@@ -1,8 +1,13 @@
 import './App.css';
+
 function App() {
   return (
-    <Footer/>
+    <div>
+      
+    </div>
+
   );
 }
+
 
 export default App;
