@@ -1,24 +1,18 @@
 .card-grey{
     width: 60vw;
-    max-height: 60vh;
+    /* max-height: 70vh; */
     position: relative;
     left: 20vw;
     top: 8vw;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background-color: #011627;
+    border-radius: 10px 10px 5px 5px;
 }
 
 .card-heading{
     width: 60vw;
     height: 5vh;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #011627;
     /* for vertically align  */
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     display: grid;
     place-items: center;
 }
@@ -27,6 +21,18 @@
     font-family: 'Montserrat';
     color: #FDFFFC;
     text-align: center;
+    font-size: 17px;
     margin: 0px;
-    overflow: hidden;
 }
+
+.content{
+    background-color: #FDFFFC;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;    
+}
+
+.content section{
+    font-family: 'Montserrat';
+    margin: 2px;
+    padding: 5px;
+ }

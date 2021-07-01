@@ -11,8 +11,10 @@ const CardGrey = (props) => {
                 {props.title && <p>{props.title}</p> }
             </div> 
 
-            {props.children} 
-            <br/>
+            <div className='content'>
+              <section>  {props.children} </section>
+              <br />
+            </div>
             
         </div>
     );
