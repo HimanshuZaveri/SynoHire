@@ -1,23 +1,31 @@
-// props => bgColor , txtColor, fontSize(optional) , width(optional), height(optional),
+// props => contentFontSize
+    // when card has header =>>header , width , fontSize, 
 
-import styled from "styled-components";
+import "./cardStyle.css";
 
 const Card = (props) => {
-    const StyledCard = styled.span`
-        background-color: ${props.bgColor};
-        color: ${props.txtColor};
-        border-radius: 0.5rem;
-        padding: 3px calc(.5rem + 4px);
-        width: ${props.width ? props.width : 'auto'};
-        height: ${props.height ? props.height : 'auto'};
-        font-size: ${props.fontSize ? props.fontSize : 'auto'};
-    `;
-
     return (
-        <StyledCard>
-            {props.children}
-        </StyledCard>
+        <div className={props.header ? "cardContainerWithHeader" : ""}
+            style={props.width && {
+                width: props.width,
+            }}>
+            {props.header && (
+                <div className="cardHeader"
+                    style={props.fontSize && {
+                        fontSize:props.fontSize,
+                    }}>
+                    {props.header}
+                </div>
+            )}
+            <div className={props.header ? "contentHeader" : "content"}
+                    style={props.contentFontSize && {
+                        fontSize: props.contentFontSize,
+                    }}
+            >
+                {props.children}
+            </div>
+        </div>
     )
-};
+}
 
 export default Card;
