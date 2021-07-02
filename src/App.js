@@ -9,17 +9,8 @@ function App() {
         sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
         sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
         sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
+        
+      
       </Card>
     </div>
   );
