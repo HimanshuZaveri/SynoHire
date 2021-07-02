@@ -1,25 +1,40 @@
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./Components/Common/NavBar/Navbar";
+import Home from "./Components/Pages/Home";
 
 function App() {
   return (
-    <div>
-<<<<<<< HEAD
-      <Card header='card header' width="60%" fontSize="1.5rem" contentFontSize="2rem">
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        sdlf;,m; sdfkl sdfsld fls'af sdal;slk;fm lkd fal;k mdpojahj gainldak ndsofpols sdkfl/'
-        sbfjdk ksdfkbjbf sdkfjsk fondsjf sdlfasd nfolsda sflsd fsndfa;sadljfl lsdfksadf ;lkdjfnsd afjsd fsda;
-        
-      
-      </Card>
-=======
-      
->>>>>>> bc049979206120d26ec8636ca223d09ad1a10ba1
-    </div>
-
-  );
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Navbar
+            compo={[
+              {
+                title: "abbout ",
+                path: "/abouts",
+                margin: "0px 5px 0px 5px",
+                bgColor: "#C6FFDD",
+              },
+              {
+                title: "hello ",
+                path: "/hello",
+                margin: "0px 5px 0px 5px",
+                bgColor: "#FBD786",
+              },
+              {
+                title: "Hello ",
+                path: "/hello2",
+                margin: "0px 5px 0px 5px",
+                bgColor: "#C6FFDD",
+              },
+            ]}
+          />
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+);
 }
-
 
 export default App;
