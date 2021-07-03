@@ -1,3 +1,5 @@
+// title props : heading
+
 import './CardGrey.css';
 
 const CardGrey = (props) => {
