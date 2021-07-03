@@ -2,7 +2,6 @@ import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecki
 function App() {
   return (
     <div>
-      <SystemChecking />
     </div>
 
   );
