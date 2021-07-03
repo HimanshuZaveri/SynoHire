@@ -1,11 +1,9 @@
 import React from 'react'
 import footerimage from './footer.png'
 
-const Footer = () => {
+const Footer = (props) => {
     return (
-        <div>
-            <img src = {footerimage} width="100%"></img>
-        </div>
+        <img src = {footerimage} width="100%" alt="footer"/>
     )
 }
 
