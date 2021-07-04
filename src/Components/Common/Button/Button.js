@@ -1,4 +1,5 @@
-// props => bgColor , txtColor, actionHandler, title, fontSize(optional) , width(optional), height(optional)
+// props => bgColor , txtColor, actionHandler, title, 
+//          fontSize(optional) , width(optional), height(optional)
 
 import styled from "styled-components";
 
@@ -7,14 +8,14 @@ const Button = (props) => {
     const StyledButton = styled.button`
         background-color: ${props.bgColor};
         color: ${props.txtColor};
-        border-radius: 0.5rem;
-        padding: 3px calc(.5rem + 4px);    
-        width: ${props.width ? props.width : 'auto'};
-        height: ${props.height ? props.height : 'auto'};
+        border: none;
+        border-radius: 1rem;
+        padding: 4px calc(.5rem + 4px);
         font-size: ${props.fontSize ? props.fontSize : 'auto'};
+        font-weight: 500;
     `;
     return (
-        <StyledButton bgColor="#011627">
+        <StyledButton>
             {props.title}
         </StyledButton>
     )

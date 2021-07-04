@@ -2,13 +2,14 @@ import React from 'react';
 import "./SystemChecking.css";
 
 import Footer from '../Common/Footer/Footer';
-import Card from '../Common/Card/Card';
+import RequirementCard from './RequirementCard';
+import Button from '../Common/Button/Button';
 
 const SystemChecking = () => {
     return (
         <div className="container">
             <div className="header">
-            <h1> Navbar Here </h1>
+                <h1> Navbar Here </h1>
             </div>
             <div className="body">
                 <div className="row1">
@@ -30,9 +31,39 @@ const SystemChecking = () => {
                     </div>
                 </div>
                 <div className="row2">
-                    <Card style={{height: '100px',with: '100px'}}>
-                        asdfsd
-                    </Card>
+                    <RequirementCard style="card">
+                        <RequirementCard style="innerCard">
+                        
+                        </RequirementCard>
+                        <Button
+                            bgColor="rgb(224, 224, 224)"
+                            txtColor="#011627"
+                            title="Check"
+                            fontSize=".8rem" />
+                    </RequirementCard>
+                    <RequirementCard style="card">
+                        <RequirementCard style="innerCard">
+                        </RequirementCard>
+                        <Button
+                            bgColor="rgb(224, 224, 224)"
+                            txtColor="#011627"
+                            title="Check"
+                            fontSize=".8rem" />
+                    </RequirementCard>
+                    <RequirementCard style="card">
+                        <RequirementCard style="innerCard">
+                        </RequirementCard>
+                        <Button
+                            bgColor="rgb(224, 224, 224)"
+                            txtColor="#011627"
+                            title="Check"
+                            fontSize=".8rem" />
+                    </RequirementCard>
+                    <Button
+                        bgColor="#2ec4b6"
+                        txtColor="#011627"
+                        title="START"
+                        fontSize="1.5rem" />
                 </div>
             </div>
             <div className="footer">
