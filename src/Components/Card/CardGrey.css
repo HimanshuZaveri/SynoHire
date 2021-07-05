@@ -1,0 +1,39 @@
+.card-grey{
+    width: 60vw;
+    /* max-height: 70vh; */
+    position: relative;
+    left: 20vw;
+    top: 8vw;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    background-color: #011627;
+    border-radius: 12px;
+}
+
+.card-heading{
+    width: 60vw;
+    height: 5vh;
+    /* for vertically align  */
+    display: grid;
+    place-items: center;
+}
+
+.card-heading p{
+    font-family: 'Montserrat';
+    color: #FDFFFC;
+    text-align: center;
+    font-size: 17px;
+    margin: 0px;
+}
+
+.content{
+    background-color: #FDFFFC;
+    /* border-top-left-radius: 12px;
+    border-top-right-radius: 12px;     */
+    border-radius:12px;
+}
+
+.content section{
+    font-family: 'Montserrat';
+    margin: 2px;
+    padding: 5px;
+ }
