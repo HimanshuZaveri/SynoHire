@@ -50,7 +50,7 @@ const SystemChecking = () => {
 
                     <RequirementCard styles="card">
                         <RequirementCard styles="innerCard">
-                        <img alt="SpeedTest" src={MicImg} width="120px" height="auto" />
+                            <img alt="SpeedTest" src={MicImg} width="120px" height="auto" />
                         </RequirementCard>
                         <Button
                             title="Check"
@@ -61,8 +61,8 @@ const SystemChecking = () => {
                         title="NEXT"
                         styles={checkedAll ? "enable" : "disable"} />
                 </div>
-                <Footer />
             </div>
+            
 
         </div>
     )

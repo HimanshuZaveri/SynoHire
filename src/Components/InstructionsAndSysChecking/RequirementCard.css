@@ -1,6 +1,8 @@
 .card{
     height: 220px;
     width: 200px;
+    max-height: 220px;
+    max-width: 200px;
     border-radius: 15px;
     background-color: #2ec4b6;
     border: 2px solid #20857b;
@@ -14,6 +16,8 @@
 .innerCard{
     height: 140px;
     width: 140px;
+    max-height: 140px;
+    max-width: 140px;
     border-radius: 15px;
     background-color: rgb(224, 224, 224);
     border: 2px solid #20857b;
