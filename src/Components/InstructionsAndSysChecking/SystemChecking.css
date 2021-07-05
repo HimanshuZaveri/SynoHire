@@ -1,0 +1,45 @@
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: ap;
+    margin: 0;
+    padding: 0;
+    flex-wrap: no-wrap;
+}
+
+.header{
+    height: 15%;
+    background-color: aqua;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 68%;
+}
+
+.row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.instruction{
+    font-size: 1.4rem;
+    width: 40%;
+}
+
+.row2{
+    display: flex;
+    margin-top: 4%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import Footer_content from "./Footer_content";
 import ReactDOM from "react-dom";
 
-
 const Footer = () => {
   return (
     <Fragment>
