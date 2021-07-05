@@ -2,9 +2,10 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-end; */
+    justify-content: ap;
     margin: 0;
     padding: 0;
+    flex-wrap: no-wrap;
 }
 
 .header{
@@ -15,8 +16,8 @@
 .body{
     display: flex;
     flex-direction: column;
-    background-color: burlywood;
-    height: 70.8%;
+    justify-content: space-around;
+    height: 68%;
 }
 
 .row1{
@@ -37,13 +38,8 @@
 
 .row2{
     display: flex;
+    margin-top: 4%;
     align-items: center;
     justify-content: space-evenly;
-
+    flex-wrap: wrap;
 }
-
-.footer{
-    display: flex;
-    justify-self: flex-end;
-}
-
