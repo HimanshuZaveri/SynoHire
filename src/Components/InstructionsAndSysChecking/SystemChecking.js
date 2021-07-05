@@ -4,8 +4,15 @@ import "./SystemChecking.css";
 import Footer from '../Common/Footer/Footer';
 import RequirementCard from './RequirementCard';
 import Button from '../Common/Button/Button';
+import Instructions from './Instructions';
+
+import CameraImg from '../Assets/Images/camera.png';
+import MeterImg from '../Assets/Images/speedMeter.png';
+import MicImg from '../Assets/Images/mic.png';
 
 const SystemChecking = () => {
+    const checkedAll = true;
+
     return (
         <div className="container">
             <div className="header">
@@ -17,58 +24,46 @@ const SystemChecking = () => {
                         System Checking
                     </div>
                     <div className="instruction">
-                        <ul>
-                            <li>
-                                This test will be proctored by the hiring officials.
-                            </li>
-                            <li>
-                                Ensure the room is lit properly and the background is dark.
-                            </li>
-                            <li>
-                                Try to attempt the test in a quiet place.
-                            </li>
-                        </ul>
+                        <Instructions />
                     </div>
                 </div>
+
                 <div className="row2">
-                    <RequirementCard style="card">
-                        <RequirementCard style="innerCard">
-                        
+
+                    <RequirementCard styles="card">
+                        <RequirementCard styles="innerCard">
+                            <img alt="WebCam" src={CameraImg} width="130px" height="auto" />
                         </RequirementCard>
                         <Button
-                            bgColor="rgb(224, 224, 224)"
-                            txtColor="#011627"
                             title="Check"
-                            fontSize=".8rem" />
+                            styles="disable" />
                     </RequirementCard>
-                    <RequirementCard style="card">
-                        <RequirementCard style="innerCard">
+
+                    <RequirementCard styles="card">
+                        <RequirementCard styles="innerCard">
+                            <img alt="SpeedTest" src={MeterImg} width="120px" height="auto" />
                         </RequirementCard>
                         <Button
-                            bgColor="rgb(224, 224, 224)"
-                            txtColor="#011627"
                             title="Check"
-                            fontSize=".8rem" />
+                            styles="disable" />
                     </RequirementCard>
-                    <RequirementCard style="card">
-                        <RequirementCard style="innerCard">
+
+                    <RequirementCard styles="card">
+                        <RequirementCard styles="innerCard">
+                        <img alt="SpeedTest" src={MicImg} width="120px" height="auto" />
                         </RequirementCard>
                         <Button
-                            bgColor="rgb(224, 224, 224)"
-                            txtColor="#011627"
                             title="Check"
-                            fontSize=".8rem" />
+                            styles="disable" />
                     </RequirementCard>
+
                     <Button
-                        bgColor="#2ec4b6"
-                        txtColor="#011627"
-                        title="START"
-                        fontSize="1.5rem" />
+                        title="NEXT"
+                        styles={checkedAll ? "enable" : "disable"} />
                 </div>
-            </div>
-            <div className="footer">
                 <Footer />
             </div>
+
         </div>
     )
 };

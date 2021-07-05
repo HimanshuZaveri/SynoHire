@@ -3,7 +3,7 @@ import "./RequirementCard.css";
 
 const RequirementCard =  (props) => {
     return(
-        <div className={props.style}>
+        <div className={props.styles}>
             {props.children}
         </div>
     )

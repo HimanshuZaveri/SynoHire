@@ -1,5 +1,5 @@
 import React from 'react'
-import footerimage from './footer.png'
+import footerimage from '../../Assets/Images/footer.png';
 
 const Footer = (props) => {
     return (
@@ -7,4 +7,4 @@ const Footer = (props) => {
     )
 }
 
-export default Footer
+export default Footer;

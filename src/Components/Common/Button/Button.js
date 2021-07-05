@@ -1,23 +1,13 @@
-// props => bgColor , txtColor, actionHandler, title, 
-//          fontSize(optional) , width(optional), height(optional)
+// props => styles= action or disable or enable
+//                  and title
 
-import styled from "styled-components";
-
+import "./Button.css";
 
 const Button = (props) => {
-    const StyledButton = styled.button`
-        background-color: ${props.bgColor};
-        color: ${props.txtColor};
-        border: none;
-        border-radius: 1rem;
-        padding: 4px calc(.5rem + 4px);
-        font-size: ${props.fontSize ? props.fontSize : 'auto'};
-        font-weight: 500;
-    `;
     return (
-        <StyledButton>
+        <button className={props.styles}>
             {props.title}
-        </StyledButton>
+        </button>
     )
 };
 
