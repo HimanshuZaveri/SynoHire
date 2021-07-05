@@ -1,11 +1,8 @@
-import CardGrey from './Components/Card/CardGrey';
-import Dashboardhome from './Dashboard/Dashboardhome/Dashboardhome';
-
-import './App.css';
+import Dashboard from './Dashboard'
 
 function App() {
   return (
-    <Dashboardhome />
+    <Dashboard />
   );
 }
 
