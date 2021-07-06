@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/Images/synohirelogo.png";
+import logo from "../../../Assets/Image/synohirelogo.png";
 import { v4 as uuidv4 } from "uuid";
 function Navbar(props) {
   //   console.log(props.compo);
