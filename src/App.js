@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Common/NavBar/Navbar";
+import Home from "./Components/Pages/Home";
+import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecking";
 
 function App() {
   return (
@@ -29,10 +31,11 @@ function App() {
               },
             ]}
           />
+          <Home />
         </Route>
       </Switch>
     </Router>
-);
+  );
 }
 
 export default App;

@@ -8,7 +8,7 @@ function Navbar(props) {
   //   console.log(props.compo);
   return (
     <nav className="nav">
-      <img className="nav_logo" src={logo} alt='loading error!'/>
+      <img className="nav_logo" src={logo} />
       <span className="nav_container">
         {props.compo?.map((res) => (
           <Link key={uuidv4()} to={res.path}>
