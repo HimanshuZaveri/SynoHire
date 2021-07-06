@@ -11,13 +11,14 @@ function Navbar(props) {
       <img className="nav_logo" src={logo} />
       <span className="nav_container">
         {props.compo?.map((res) => (
-          <Link key={uuidv4()} to={res.path}>
-            <Button
+          // <Link key={uuidv4()} to={res.path}>
+            <Button key={uuidv4()}
               title={res.title}
-              bgColor={res.bgColor}
-              margin={res.margin}
+              styles="navbar_button"
+              // bgColor={res.bgColor}
+              // margin={res.margin}
             />
-          </Link>
+          // </Link>
         ))}
       </span>
     </nav>
