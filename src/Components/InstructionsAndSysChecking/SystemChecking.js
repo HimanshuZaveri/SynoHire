@@ -1,5 +1,5 @@
 import React from 'react';
-import "./SystemChecking.css";
+import classes from "./SystemChecking.module.css";
 
 import Footer from '../Common/Footer/Footer';
 import RequirementCard from './RequirementCard';
@@ -14,21 +14,21 @@ const SystemChecking = () => {
     const checkedAll = true;
 
     return (
-        <div className="container">
-            <div className="header">
+        <div className={classes.container}>
+            <div className={classes.header}>
                 <h1> Navbar Here </h1>
             </div>
-            <div className="body">
-                <div className="row1">
-                    <div className="heading">
-                        System Checking
+            <div className={classes.body}>
+                <div className={classes.row1}>
+                    <div className={classes.heading}>
+                        <h1>System Checking</h1>
                     </div>
-                    <div className="instruction">
+                    <div className={classes.instruction}>
                         <Instructions />
                     </div>
                 </div>
 
-                <div className="row2">
+                <div className={classes.row2}>
 
                     <RequirementCard styles="card">
                         <RequirementCard styles="innerCard">

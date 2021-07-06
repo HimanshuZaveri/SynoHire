@@ -1,11 +1,19 @@
 // props => styles= action or disable or enable
 //                  and title
 
-import "./Button.css";
+import classes from "./Button.module.css";
 
 const Button = (props) => {
+    let style;
+    if(props.styles === "action"){
+        style=classes.action;
+    }else if(props.styles === "disable"){
+        style = classes.disable;
+    }else{
+        style = classes.enable;
+    }
     return (
-        <button className={props.styles}>
+        <button className={style}>
             {props.title}
         </button>
     )

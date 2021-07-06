@@ -1,9 +1,9 @@
 import React from 'react';
-import "./RequirementCard.css";
+import classes from "./RequirementCard.module.css";
 
 const RequirementCard =  (props) => {
     return(
-        <div className={props.styles}>
+        <div className={props.styles === "card"? classes.card: classes.innerCard} >
             {props.children}
         </div>
     )
