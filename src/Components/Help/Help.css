@@ -46,6 +46,9 @@ body{
     padding: 2px;
 }
 
+textarea[placeholder]{
+    font-style:'montserrat';
+}
 h5{
     color: #011627;
     width: 25%;

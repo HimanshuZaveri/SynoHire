@@ -1,8 +1,8 @@
-import Navbar from "../../Common/NavBar/Navbar";
-import Button from '../../Common/Button/Button';
-import Footer from '../../Common/Footer/Footer';
+import Navbar from "../Common/NavBar/Navbar";
+import Button from '../Common/Button/Button';
+import Footer from '../Common/Footer/Footer';
 import './Help.css';
-import photo from '../../Assets/Images/help.jpg';
+import photo from '../Assets/Images/help.jpg';
 
 const Help = () => {
   return (
