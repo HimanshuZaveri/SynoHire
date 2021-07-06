@@ -1,0 +1,87 @@
+body{
+    font-family:'montserrat';
+}
+
+.help-section{
+    width: 97vw;
+    height: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.left{
+    width: 50vw;
+    height: 30vw;
+    /* align-self: flex-start; */
+}
+.left img{
+    width: 45vw;
+    height: 27vw;
+    margin: 2px;
+    padding: 5px;
+}
+
+.right{
+    margin: 0px auto;
+}
+
+/* .questions{
+    border: 2px solid red;
+} */
+
+/* .questions h3{
+    font-size: 28px;
+}
+*/
+.questions li{
+    color: #FF9F1C;
+    font-size: 1.7rem;
+} 
+
+.questions span{
+    color: black;
+    font-size: 1.25rem;
+    margin: 3px;
+    padding: 2px;
+}
+
+textarea[placeholder]{
+    font-style:'montserrat';
+}
+h5{
+    color: #011627;
+    width: 25%;
+    font-size: 1.3rem;
+    display: block;
+    margin: 5px auto;
+    padding: 2px;
+}
+
+textarea{
+    width: 25vw;
+    height: 7vw;
+    resize: none;
+}
+
+.comt-btn{
+    display: block;
+    width: 25vw;
+    margin: 15px 0px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .help-image img{
+        width: 90vw;
+        height: 50vw;
+        margin: 2px;
+        padding: 5px;
+    }
+    /* .questions{
+        border: 2px solid red;
+    
+        height: 30vh;
+        
+    }  */
+}
