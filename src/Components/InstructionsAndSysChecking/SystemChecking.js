@@ -6,9 +6,9 @@ import RequirementCard from './RequirementCard';
 import Button from '../Common/Button/Button';
 import Instructions from './Instructions';
 
-import CameraImg from '../Assets/Images/camera.png';
-import MeterImg from '../Assets/Images/speedMeter.png';
-import MicImg from '../Assets/Images/mic.png';
+import CameraImg from '../../Assets/Image/camera.png';
+import MeterImg from '../../Assets/Image/speedMeter.png';
+import MicImg from '../../Assets/Image/mic.png';
 
 const SystemChecking = () => {
     const checkedAll = true;
@@ -61,6 +61,7 @@ const SystemChecking = () => {
                         title="NEXT"
                         styles={checkedAll ? "enable" : "disable"} />
                 </div>
+                <Footer/>
             </div>
             
 
