@@ -1,4 +1,4 @@
-import Dashboardhome from './Dashboard/Dashboardhome/Dashboardhome';
+import Dashboardhome from '../Dashboard/Dashboardhome/Dashboardhome';
 
 function Dashboard() {
   return (

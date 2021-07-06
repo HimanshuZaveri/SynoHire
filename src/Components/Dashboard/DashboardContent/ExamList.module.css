@@ -1,0 +1,12 @@
+.card_with_button{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:15px;
+    background-color: whitesmoke;
+    border-radius: .5rem;
+}

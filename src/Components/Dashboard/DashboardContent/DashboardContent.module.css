@@ -1,0 +1,13 @@
+.component_window {
+  display: flex;
+  flex-direction: column;
+  padding:5%;
+}
+.margin_items{
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+.center_content{
+    display: flex;
+    justify-content: center;
+}
