@@ -9,7 +9,7 @@ const Button = (props) => {
         style=classes.action;
     }else if(props.styles === "disable"){
         style = classes.disable;
-    }else{
+    }else if(props.styles === "enable"){
         style = classes.enable;
     }
     return (
