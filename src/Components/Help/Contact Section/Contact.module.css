@@ -1,0 +1,39 @@
+.contact{
+    margin: 15px;
+    
+}
+
+.contact h5{
+    font-size: 1.3rem;
+    color: #011627;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    padding: 2px;
+}
+
+textarea{
+    width: 25vw;
+    height: 7vw;
+    resize: none;
+    display: block;
+    margin: 2px auto;
+    border-radius: 5px;
+}
+
+/* textarea[placeholder]{
+    font-style:'montserrat'; 
+} */
+
+.comment-btn{
+    display: block;
+    width: 5vw;
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 850px) and (min-width: 0px){
+    textarea{
+        width: 57vw;
+        height: 18vw;
+    }
+}

@@ -1,0 +1,39 @@
+.questions{
+    padding: 2px;
+    margin: 4px;
+}
+
+ .questions h3{
+    padding: 3px;
+    margin: 3px;
+    font-size: 28px;
+}
+
+.questions ul{
+    margin: 4px;
+} 
+.questions li{
+    color: #FF9F1C;
+    font-size: 1.7rem;
+    margin: 1px;
+    padding: 2px;
+} 
+
+.questions span{
+    color: black;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 850px) and (min-width: 0px){
+    .questions{
+        height: 52%;
+    }
+
+    .questions li{
+        font-size: 1rem;
+    }
+     
+    .questions span{
+        font-size: 1.2rem;
+    } 
+}
