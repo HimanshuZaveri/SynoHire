@@ -1,0 +1,52 @@
+.navContainer{
+  height: 10vh;
+  width: 98%;
+  margin: 0px 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FDFFFC;
+}
+
+.navLogo{
+  height: 80%;
+}
+
+.linksContainer{
+  display: inline-flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.link{
+  margin-right: 15px;
+  text-decoration: none;
+  border: 2px solid #2EC4B6 ;
+  padding: 5px;
+  color: #2EC4B6;
+  border-radius: 1rem;
+}
+
+.userInfo{
+  border: 2px solid #2EC4B6 ;
+  padding: 5px;
+  color: #011627;
+  border-radius: .5rem;
+}
+
+.activeLink{
+  color: #FDFFFC;
+  border: none;
+  padding: 6px;
+  background-color: #011627;
+}
+
+.link:hover{
+  color: #FDFFFC;
+  background-color: #011627;
+  padding: 7px;
+  border: none;
+  box-shadow: 2px 2px #2EC4B6;
+}

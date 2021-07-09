@@ -1,14 +1,25 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Common/NavBar/Navbar";
-import Home from "./Components/Pages/Home";
-import IndexTest from "./Components/TestInstructions/IndexTest";
-import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecking";
+import { Switch, Route } from "react-router-dom";
+import Landing from "./Components/Landing/Landing";
+import Dashboardhome from "./Dashboard/Dashboardhome/Dashboardhome";
+// import Home from "./Components/Pages/Home";
+// import IndexTest from "./Components/TestInstructions/IndexTest";
+// import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecking";
 
 function App() {
   return (
-    <div>
-    </div>
+    <switch>
+      <Route path="/" exact>
+        <Landing />
+      </Route>
+      <Route path="/dashboard" exact>
+        <Dashboardhome />
+      </Route>
+      <Route path="/help" exact>
+        <Help />
+      </Route>
+    </switch>
   )
 }
 

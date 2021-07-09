@@ -1,25 +1,23 @@
-import React from "react";
-import "./Navbar.css";
-import Button from "../Button/Button";
-import { Link } from "react-router-dom";
-import logo from "../../../Assets/Image/synohirelogo.png";
-import { v4 as uuidv4 } from "uuid";
-function Navbar(props) {
-  //   console.log(props.compo);
+import classes from "./Navbar.module.css";
+import logo from "../../../Assets/Image/SynoHire.png";
+import { NavLink } from "react-router-dom";
+
+const Navbar = () =>{
+  
   return (
-    <nav className="nav">
-      <img className="nav_logo" src={logo} />
-      <span className="nav_container">
-        {props.compo?.map((res) => (
-          <Link key={uuidv4()} to={res.path}>
-            <Button
-              title={res.title}
-              bgColor={res.bgColor}
-              margin={res.margin}
-            />
-          </Link>
-        ))}
-      </span>
+    <nav className={classes.navContainer}>
+      <img className={classes.navLogo} src={logo}/>
+      <div className={classes.linksContainer}>
+        <NavLink to="/dashboard" activeClassName={classes.activeLink} className={classes.link}>
+          Dashboard
+        </NavLink>
+        <NavLink to="/help" activeClassName={classes.activeLink} className={classes.link}>
+          Help
+        </NavLink>
+        <div className={classes.userInfo}>
+        user@name12345
+        </div>
+      </div>
     </nav>
   );
 }

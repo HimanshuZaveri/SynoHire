@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from "./SystemChecking.module.css";
 
+import Navbar from '../Common/NavBar/Navbar';
 import Footer from '../Common/Footer/Footer';
 import RequirementCard from './RequirementCard';
 import Button from '../Common/Button/Button';
@@ -16,7 +17,7 @@ const SystemChecking = () => {
     return (
         <div className={classes.container}>
             <div className={classes.header}>
-                <h1> Navbar Here </h1>
+                <Navbar />
             </div>
             <div className={classes.body}>
                 <div className={classes.row1}>
