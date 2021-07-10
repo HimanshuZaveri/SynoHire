@@ -4,6 +4,7 @@ import Landing from "./Components/Landing/Landing";
 import Dashboardhome from "./Components/Dashboard/Dashboardhome/Dashboardhome";
 import Help from "./Components/Help/Help";
 import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecking";
+import IndexTest from "./Components/TestInstructions/IndexTest";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           <Route path="/sysCheck" exact>
             <Navbar />
           </Route>
+          <Route path="/testInstruction" exact>
+            <Navbar />
+          </Route>
         </Switch>
       </div>
       <Switch>
@@ -37,6 +41,9 @@ function App() {
         <Route path="/sysCheck" exact>
           <SystemChecking />
         </Route>
+        <Route path="/testInstruction" exact>
+            <IndexTest />
+          </Route>
       </Switch>
     </div>
   )

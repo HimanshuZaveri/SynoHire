@@ -8,19 +8,6 @@ import photo from '../../Assets/Image/help.jpg';
 const Help = () => {
   return (
     <>
-      <Navbar
-        compo={[
-          {
-            title: "Dashboard ",
-          },
-          {
-            title: "Help ",
-          },
-          {
-            title: "User171254 ",
-          },
-        ]}
-      />
 
       <div className={classes['help-section']}>
 
