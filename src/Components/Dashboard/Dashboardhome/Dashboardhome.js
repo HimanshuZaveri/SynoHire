@@ -15,19 +15,7 @@ const Exams = [
 function Dashboardhome() {
   return (
     <div>
-      <Navbar
-        compo={[
-          {
-            title: "Dashboard ",
-          },
-          {
-            title: "Help ",
-          },
-          {
-            title: "User171254 ",
-          },
-        ]}
-      />
+      
       <DashboardContent listExam={Exams}/>
       <Footer />
     </div>
