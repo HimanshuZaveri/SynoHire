@@ -1,14 +1,3 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navbar{
-    background-color: aqua;
-
-}
-
 .body{
     display: flex;
     flex-direction: column;
