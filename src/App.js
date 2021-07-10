@@ -1,40 +1,52 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Navbar from "./Components/Common/NavBar/Navbar";
-import Home from "./Components/Pages/Home";
+import Landing from "./Components/Landing/Landing";
+import Dashboardhome from "./Components/Dashboard/Dashboardhome/Dashboardhome";
+import Help from "./Components/Help/Help";
+import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecking";
+import IndexTest from "./Components/TestInstructions/IndexTest";
 
 function App() {
   return (
-    <Router>
+    <div>
+      <div style={{height: "10vh"}}>
+        <Switch>
+        <Route path="/" exact>
+            <Navbar />
+          </Route>
+          <Route path="/dashboard" exact>
+            <Navbar />
+          </Route>
+          <Route path="/help" exact>
+            <Navbar />
+          </Route>
+          <Route path="/sysCheck" exact>
+            <Navbar />
+          </Route>
+          <Route path="/testInstruction" exact>
+            <Navbar />
+          </Route>
+        </Switch>
+      </div>
       <Switch>
-        <Route exact path="/">
-          <Navbar
-            compo={[
-              {
-                title: "abbout ",
-                path: "/abouts",
-                margin: "0px 5px 0px 5px",
-                bgColor: "#C6FFDD",
-              },
-              {
-                title: "hello ",
-                path: "/hello",
-                margin: "0px 5px 0px 5px",
-                bgColor: "#FBD786",
-              },
-              {
-                title: "Hello ",
-                path: "/hello2",
-                margin: "0px 5px 0px 5px",
-                bgColor: "#C6FFDD",
-              },
-            ]}
-          />
-          <Home />
+        <Route path="/" exact>
+          <Landing />
         </Route>
+        <Route path="/dashboard" exact>
+          <Dashboardhome />
+        </Route>
+        <Route path="/help" exact>
+          <Help />
+        </Route>
+        <Route path="/sysCheck" exact>
+          <SystemChecking />
+        </Route>
+        <Route path="/testInstruction" exact>
+            <IndexTest />
+          </Route>
       </Switch>
-    </Router>
-);
+    </div>
+  )
 }
 
 export default App;

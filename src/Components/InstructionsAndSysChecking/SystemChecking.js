@@ -1,44 +1,65 @@
 import React from 'react';
-import "./SystemChecking.css";
+import classes from "./SystemChecking.module.css";
 
 import Footer from '../Common/Footer/Footer';
-import Card from '../Common/Card/Card';
+import RequirementCard from './RequirementCard';
+import Button from '../Common/Button/Button';
+import Instructions from './Instructions';
+
+import CameraImg from '../../Assets/Image/camera.png';
+import MeterImg from '../../Assets/Image/speedMeter.png';
+import MicImg from '../../Assets/Image/mic.png';
 
 const SystemChecking = () => {
+    const checkedAll = true;
+
     return (
-        <div className="container">
-            <div className="header">
-            <h1> Navbar Here </h1>
-            </div>
-            <div className="body">
-                <div className="row1">
-                    <div className="heading">
-                        System Checking
-                    </div>
-                    <div className="instruction">
-                        <ul>
-                            <li>
-                                This test will be proctored by the hiring officials.
-                            </li>
-                            <li>
-                                Ensure the room is lit properly and the background is dark.
-                            </li>
-                            <li>
-                                Try to attempt the test in a quiet place.
-                            </li>
-                        </ul>
-                    </div>
+        <div className={classes.body}>
+            <div className={classes.row1}>
+                <div className={classes.heading}>
+                    <h1>System Checking</h1>
                 </div>
-                <div className="row2">
-                    <Card style={{height: '100px',with: '100px'}}>
-                        asdfsd
-                    </Card>
+                <div className={classes.instruction}>
+                    <Instructions />
                 </div>
             </div>
-            <div className="footer">
-                <Footer />
+
+            <div className={classes.row2}>
+
+                <RequirementCard styles="card">
+                    <RequirementCard styles="innerCard">
+                        <img alt="WebCam" src={CameraImg} width="130px" height="auto" />
+                    </RequirementCard>
+                    <Button
+                        title="Check"
+                        styles="disable" />
+                </RequirementCard>
+
+                <RequirementCard styles="card">
+                    <RequirementCard styles="innerCard">
+                        <img alt="SpeedTest" src={MeterImg} width="120px" height="auto" />
+                    </RequirementCard>
+                    <Button
+                        title="Check"
+                        styles="disable" />
+                </RequirementCard>
+
+                <RequirementCard styles="card">
+                    <RequirementCard styles="innerCard">
+                        <img alt="SpeedTest" src={MicImg} width="120px" height="auto" />
+                    </RequirementCard>
+                    <Button
+                        title="Check"
+                        styles="disable" />
+                </RequirementCard>
+
+                <Button
+                    title="NEXT"
+                    styles={checkedAll ? "enable" : "disable"} />
             </div>
+            <Footer />
         </div>
+
     )
 };
 
