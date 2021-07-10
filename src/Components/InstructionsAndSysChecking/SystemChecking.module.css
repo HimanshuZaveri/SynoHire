@@ -1,17 +1,3 @@
-.container{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-    /* flex-wrap: no-wrap; */
-}
-
-.header{
-    background-color: aqua;
-}
-
 .body{
     display: flex;
     flex-direction: column;
@@ -27,12 +13,11 @@
 }
 
 .heading{
-    font-size: 2.5rem;
-    font-weight: 900;
+    font-size: 1.3rem;
 }
 
 .instruction{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     width: 40%;
 }
 
@@ -42,4 +27,23 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+@media (max-width: 750px) {
+.row1{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.heading{
+    font-size: 1rem;
+}
+.instruction{
+    width: 70%;
+}
+.row2{
+    flex-direction: column;
+}
+.row2 > Button{
+    margin-top: 30px;
+}
 }

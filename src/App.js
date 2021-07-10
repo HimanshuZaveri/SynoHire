@@ -1,17 +1,35 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./Components/Common/NavBar/Navbar";
-import Home from "./Components/Pages/Home";
-import Dashboard from "./Components/Pages/Dashboard";
-import Feedback from './Components/Pages/Feedback';
+import { Switch, Route } from "react-router-dom";
+import Landing from "./Components/Landing/Landing";
+import Dashboardhome from "./Dashboard/Dashboardhome/Dashboardhome";
+// import Home from "./Components/Pages/Home";
+import IndexTest from "./Components/TestInstructions/IndexTest";
+import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecking";
 
 function App() {
   return (
-    // <Router>
-    //   <Route path='/path'>
-        <Feedback />
-    //   </Route>
-    // </Router> 
+    <div>
+      <div style={{height: "10vh"}}>
+        <switch>
+          <Route path="/dashboard" exact>
+            <Navbar />
+          </Route>
+          <Route path="/help" exact>
+            <Navbar />
+          </Route>
+        </switch>
+      </div>
+      <switch>
+        <Route path="/" exact>
+          <Landing />
+        </Route>
+        <Route path="/dashboard" exact>
+          <SystemChecking />
+        </Route>
+        <Route path="/help" exact>
+          <IndexTest />
+        </Route>
+      </switch>
+    </div>
   )
 }
 
