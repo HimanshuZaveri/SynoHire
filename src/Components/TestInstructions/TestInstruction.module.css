@@ -1,0 +1,17 @@
+.firstHeading{
+    margin: 4px;
+    text-decoration: underline;
+}
+
+.secondHeading{
+    margin-bottom: 4px;
+}
+
+.checkbox{
+    margin-top: 20px;
+}
+
+.thirdHeading{
+    padding-left: 2px;
+    font-weight: bold;
+}
