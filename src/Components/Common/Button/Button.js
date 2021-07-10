@@ -4,13 +4,6 @@
 import classes from "./Button.module.css";
 
 const Button = (props) => {
-<<<<<<< HEAD
-  return (
-    <button className={props.styles}>
-      {props.title}
-    </button>
-  );
-=======
     let style;
     if(props.styles === "action"){
         style=classes.action;
@@ -24,7 +17,6 @@ const Button = (props) => {
             {props.title}
         </button>
     )
->>>>>>> remotes/origin/Himanshu
 };
 
 export default Button;
