@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "./Components/Common/NavBar/Navbar";
 import { Switch, Route } from "react-router-dom";
 import Landing from "./Components/Landing/Landing";
 import Dashboardhome from "./Dashboard/Dashboardhome/Dashboardhome";

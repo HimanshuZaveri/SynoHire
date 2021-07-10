@@ -1,8 +1,8 @@
 import Navbar from "../Common/NavBar/Navbar";
 import Button from '../Common/Button/Button';
 import Footer from '../Common/Footer/Footer';
-import './Help.css';
-import photo from '../Assets/Images/help.jpg';
+import classes from './Help.module.css';
+import photo from '../../Assets/Image/help.jpg';
 
 const Help = () => {
   return (
@@ -24,26 +24,33 @@ const Help = () => {
         ]}
       />
 
-      <div className="help-section">
+      <div className={classes['help-section']}>
 
-        <div className='left'>
+        <div className={classes.left}>
           <img src={photo} alt='loading error!' />
         </div>
-        <div className='right'>
-        <div className='questions'>
-          <h3>Frequent Questions</h3>
-          <ul>
-            <li> <span>Some frequently asked questions and answer</span></li>
-            <li> <span>Some frequently asked questions and answer</span></li>
-            <li> <span>Some frequently asked questions and answer</span></li>
-            <li> <span>Some frequently asked questions and answer</span></li>
-          </ul>
+
+        <div className={classes.right}>
+
+          <div className={classes.questions}>
+            <h3>Frequent Questions</h3>
+            <ul>
+              <li> <span>Some frequently asked questions and answer</span></li>
+              <li> <span>Some frequently asked questions and answer</span></li>
+              <li> <span>Some frequently asked questions and answer</span></li>
+              <li> <span>Some frequently asked questions and answer</span></li>
+            </ul>
+          </div>
+
+          <div className={classes.contact}>
+            <h5>contact us</h5>
+            <textarea placeholder='Write Here..' ></textarea>
+            <div className={classes['comment-btn']}>
+              <Button title='Submit' styles='disable' />
+            </div>
+          </div>
+
         </div>
-        <h5>contact us</h5>
-        <textarea  placeholder='Write Here..' ></textarea>
-        <div className='comt-btn'><Button margin="4px 9vw" bgColor='#011627' title='Submit' txtColor='#FDFFFC' fontSize="1.5vw" width='9vw' height='2.5vw'/>
-      </div>
-      </div>
       </div>
       <Footer />
     </>

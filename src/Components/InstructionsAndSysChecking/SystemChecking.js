@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from "./SystemChecking.module.css";
 
-import Footer from '../Common/Footer/Footer';
+// import Footer from '../Common/Footer/Footer';
 import RequirementCard from './RequirementCard';
 import Button from '../Common/Button/Button';
 import Instructions from './Instructions';

@@ -31,7 +31,25 @@
     cursor: pointer;
 }
 
-.disable:hover{
-    background-color: #FF9F1C;
-    box-shadow: 1px 2px #011627, inset 1px 2px #011627;
+.disable:hover {
+  background-color: #ff9f1c;
+  box-shadow: 1px 2px #011627, inset 1px 2px #011627;
+}
+
+.navbar_button {
+  color: #011627;
+  /* background-color: transparent;
+   */
+  background-color: #d5d5d5;
+  padding: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin:5px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 20px;
+}
+.navbar_button:hover {
+  background-color: teal;
+  color: white;
 }
