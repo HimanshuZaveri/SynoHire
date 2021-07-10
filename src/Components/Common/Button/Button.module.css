@@ -1,3 +1,4 @@
+<<<<<<< HEAD:src/Components/Common/Button/Button.css
 .action {
   background-color: #e71d36;
   color: #fdfffc;
@@ -26,6 +27,39 @@
   padding: 4px calc(0.5rem + 4px);
   font-size: 1rem;
   font-weight: 500;
+=======
+.action{
+    background-color: #E71D36;
+    color: #FDFFFC;
+    border: none;
+    border-radius: 1rem;
+    padding: 4px calc(.5rem + 4px);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.disable{
+    background-color: rgb(224, 224, 224);
+    color: #011627;
+    border: none;
+    border-radius: 1rem;
+    padding: 4px calc(.5rem + 4px);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.enable{
+    background-color: #011627;
+    color: #FDFFFC;
+    border: none;
+    border-radius: 1rem;
+    padding: 4px calc(.5rem + 4px);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+>>>>>>> remotes/origin/Himanshu:src/Components/Common/Button/Button.module.css
 }
 
 .disable:hover {

@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
-import Footer_content from "./Footer_content";
+import FooterContent from "./FooterContent";
 import ReactDOM from "react-dom";
 
 const Footer = () => {
   return (
     <Fragment>
       {ReactDOM.createPortal(
-        <Footer_content/>,
+        <FooterContent/>,
         document.getElementById("footer_main")
       )}
     </Fragment>
