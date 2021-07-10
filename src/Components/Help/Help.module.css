@@ -22,66 +22,11 @@
     margin: 5px auto;
 } 
 
-.questions{
-    padding: 2px;
-    margin: 4px;
-}
-
- .questions h3{
-    padding: 3px;
-    margin: 3px;
-    font-size: 28px;
-}
-
-.questions ul{
-    margin: 4px;
-} 
-.questions li{
-    color: #FF9F1C;
-    font-size: 1.7rem;
-    margin: 1px;
-    padding: 2px;
-} 
-
-.questions span{
-    color: black;
-    font-size: 1.25rem;
-}
-
-/* textarea[placeholder]{
-    font-style:'montserrat'; 
-} */
-
-.contact{
-    margin: 15px;
-}
-
-.contact h5{
-    font-size: 1.3rem;
-    color: #011627;
-    display: block;
-    text-align: center;
-    margin: 10px;
-    padding: 2px;
-}
-
-textarea{
-    width: 25vw;
-    height: 7vw;
-    resize: none;
-    display: block;
-    margin: 2px auto;
-    border-radius: 5px;
-}
-
-.comment-btn{
-    display: block;
-    width: 5vw;
-    margin: 15px auto;
-}
-
 @media screen and (max-width: 850px) and (min-width: 0px){
-
+    .left{
+        width: 93vw;
+        height: 53vw;
+    }
     .left img{
         width: 90vw;
         height: 50vw;
@@ -89,23 +34,8 @@ textarea{
     }
     .right{
         width: 100%;
-        height: 100vh;
-        position: relative;
-        top: 15%;
+        height: 70vh;
         display: flex;
         flex-direction: column;
     } 
-    .questions{
-        height: 35%;
-    }
-    .questions li{
-        font-size: 1rem;
-    } 
-    .questions span{
-        font-size: 1rem;
-    } 
-    textarea{
-        width: 57vw;
-        height: 18vw;
-    }
 }
