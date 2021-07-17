@@ -11,6 +11,26 @@
   position: fixed;
 }
 
+.loginButton{
+  text-decoration: none;
+  background-color: #2EC4B6;
+  color: white;
+  padding: 5px 5px 10px 10px;
+  border-radius: .2rem .5rem .2rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.loginButton:hover{
+  text-decoration: none;
+  background-color: #011627;
+  color: white;
+  padding: 6px 7px 12px 14px;
+  border-radius: .3rem .6rem .3rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
 .navLogo{
   height: 80%;
   min-height: 45px;
@@ -67,6 +87,12 @@
   .navContainer{
     width: 100%;
     background-color: whitesmoke;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .navLogo{
+    max-width: 50%;
+    height: auto;
   }
   .linksContainer{
     display: none;
@@ -79,6 +105,18 @@
     height: 4vh;
     max-height: 4vh;
     padding-right: 30px;
+  }
+  .loginButton{
+    justify-self: flex-end;
+  }
+  .loginButton:hover{
+    text-decoration: none;
+    background-color: #011627;
+    color: white;
+    padding: 6px 7px 12px 14px;
+    border-radius: .3rem .6rem .3rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 900;
   }
 
 }

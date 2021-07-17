@@ -1,0 +1,22 @@
+.container{
+    /* background-color: whitesmoke; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 1px;
+    color: #011627;
+}
+
+.logo{
+    padding-top: 10px;
+    height: 200px;
+    max-height: 200px;
+}
+
+h2{
+    margin-bottom: 1px;
+}
+h2 > span{
+    color: #E71D36;
+}

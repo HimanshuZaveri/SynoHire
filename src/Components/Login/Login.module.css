@@ -1,0 +1,89 @@
+.backdrop{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0 0 50 / 80%);
+    cursor: default;
+}
+
+.loginContainer{
+    height: 60vh;
+    width: 60vw;
+    top: 15vh;
+    left: 20vw;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.header{
+    font-size: 2rem;
+    color: #011627;
+    padding-top: 4px;
+    height: 10%;
+    font-weight: 900;
+}
+
+.loginContainer2{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.loginLogoContainer{
+    height: 90%;
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 7px solid rgb(201, 195, 195);
+    border-bottom: 5px solid rgb(201, 195, 195);
+    border-radius: 10px;
+
+}
+
+.loginLogo{
+    max-height: 90%;
+}
+
+.credential{
+    height: 100%;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+        .loginContainer{
+            width: 80vw;
+            left: 10vw;
+        }
+}
+@media (max-width: 900px) {
+    .loginContainer{
+        width: 90vw;
+        left: 5vw;
+    }
+}
+@media (max-width: 750px) {
+    .loginContainer{
+        width: 100vw;
+        left: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .loginLogoContainer{
+        display: none;
+    }
+    .credential{
+        width: 90%;
+        margin: auto;
+    }
+}

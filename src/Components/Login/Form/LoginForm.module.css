@@ -1,0 +1,131 @@
+.formContainer{
+    height: 80%;
+    width: 90%;
+    margin-top: 7%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    background-color: rgba(245, 245, 245);
+    border-radius: 1rem;
+}
+
+.formLabel{
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inputField{
+    max-width: 100%;
+    border: none;
+    font-size: 1.5rem;   
+    border-radius: 1rem;
+    background-color: #011627de;
+    color: white;
+    padding-left: 1ch;
+}
+
+.formLabel:hover{
+    font-size: 1.8rem;
+    border-radius: 3px;
+    box-shadow: 3px 3px #011627;
+    border-radius: .7rem;
+}
+
+.inputField:hover, .inputField:focus{
+    background-color: #011627;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.55rem;
+}
+
+.submitButton{
+    height: 50%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.submitButton :hover{
+    color: #2EC4B6;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 710px){
+    .formLabel{
+        align-self: flex-start;
+    }
+    .inputField{
+        max-width: 90%;
+    }
+    .formLabel:hover{
+        width: 100%;
+        font-size: 1.6rem;
+        border-radius: 3px;
+        box-shadow: 3px 3px #011627;
+        border-radius: .7rem;
+    }
+    .inputField:hover, .inputField:focus{
+        background-color: #011627;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 650px){
+    .formLabel{
+        align-self: center;
+    }
+    .inputField{
+        max-width: 90%;
+    }
+    .formLabel:hover{
+        width: auto;
+        font-size: 1.6rem;
+        border-radius: 3px;
+        box-shadow: 3px 3px #011627;
+        border-radius: .7rem;
+    }
+    .inputField:hover, .inputField:focus{
+        background-color: #011627;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 400px){
+    .formLabel{
+        align-items: center;
+        font-size: 1.4rem;
+    }
+    .inputField{
+        align-self: center;
+        max-width: 80%;
+        font-size: 1.3rem;
+    }
+    .formLabel:hover{
+        width: 100%;
+        font-size: 1.5rem;
+        border-radius: 3px;
+        box-shadow: 3px 3px #011627;
+        border-radius: .7rem;
+    }
+    .inputField:hover, .inputField:focus{
+        background-color: #011627;
+        border: none;
+        outline: none;
+        border-radius: 1rem;
+        
+    }
+}

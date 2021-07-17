@@ -1,4 +1,3 @@
-import Navbar from "../Common/NavBar/Navbar";
 import Footer from '../Common/Footer/Footer';
 import FrequentQuestions from "../Help/Frequent Questions/FrequentQuestions";
 import Contact from "../Help/Contact Section/Contact";
