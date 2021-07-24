@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import classes from "./SystemChecking.module.css";
 
 import Footer from '../Common/Footer/Footer';
@@ -10,8 +10,20 @@ import CameraImg from '../../Assets/Image/camera.png';
 import MeterImg from '../../Assets/Image/speedMeter.png';
 import MicImg from '../../Assets/Image/mic.png';
 
+import CameraCheck from './Camera/CameraCheck';
+import CameraCard from './Camera/CameraCard';
+
 const SystemChecking = () => {
-    const checkedAll = true;
+    const checkedAll = false;
+    const [camCheck,setCamCheck] = useState(false);
+    const [iCheck,setICheck] = useState(false);
+    const [micCheck,setMicCheck] = useState(false);
+
+    useEffect(() => 
+        {if(camCheck && iCheck && micCheck){ 
+            checkedAll = true;
+        }}
+    , [camCheck, iCheck, micCheck]);
 
     return (
         <div className={classes.body}>
@@ -26,14 +38,7 @@ const SystemChecking = () => {
 
             <div className={classes.row2}>
 
-                <RequirementCard styles="card">
-                    <RequirementCard styles="innerCard">
-                        <img alt="WebCam" src={CameraImg} width="130px" height="auto" />
-                    </RequirementCard>
-                    <Button
-                        title="Check"
-                        styles="disable" />
-                </RequirementCard>
+                <CameraCard />
 
                 <RequirementCard styles="card">
                     <RequirementCard styles="innerCard">

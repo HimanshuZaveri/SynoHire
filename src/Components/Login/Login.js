@@ -11,7 +11,6 @@ const Login = () => {
             <Link className={classes.backdrop} to="/" />
             <div className={classes.loginContainer}>
                 <div className={classes.header}>Login Credentials</div>
-                
                 <div className={classes.loginContainer2}>
                     <div className={classes.loginLogoContainer}>
                         <img src={synohireLogo} className={classes.loginLogo} />
@@ -20,7 +19,6 @@ const Login = () => {
                         <LoginForm />
                     </div>
                 </div>
-                
             </div>
         </div>
     )

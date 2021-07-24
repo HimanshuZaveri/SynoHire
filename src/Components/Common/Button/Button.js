@@ -13,7 +13,7 @@ const Button = (props) => {
         style = classes.enable;
     }
     return (
-        <button className={style}>
+        <button className={style} onClick={props.onClick}>
             {props.title}
         </button>
     )

@@ -6,6 +6,7 @@ import Help from "./Components/Help/Help";
 import SystemChecking from "./Components/InstructionsAndSysChecking/SystemChecking";
 import IndexTest from "./Components/TestInstructions/IndexTest";
 import Feedback from "./Components/Pages/Feedback";
+import CameraCheck from "./Components/InstructionsAndSysChecking/Camera/CameraCheck";
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
         </Route>
         <Route path="/sysCheck" exact>
           <SystemChecking />
+        </Route>
+        <Route path="/sysCheck/camera" exact>
+          <CameraCheck />
         </Route>
         <Route path="/testInstruction" exact>
           <IndexTest />
